@@ -15,7 +15,7 @@ import PostContent from '../components/PostContent';
 import { ReadNext } from '../components/ReadNext';
 import { Subscribe } from '../components/subscribe/Subscribe';
 import { Wrapper } from '../components/Wrapper';
-import IndexLayout from '../layouts';
+import IndexLayout from '../layouts/index'
 import { colors } from '../styles/colors';
 import { inner, outer, SiteMain } from '../styles/shared';
 import config from '../website-config';
@@ -154,7 +154,7 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
           />
         )}
         <meta name="twitter:label1" content="Written by" />
-        <meta name="twitter:data1" content={post.frontmatter.author[0].id} />
+        <meta name="twitter:data1" content={post.frontmatter.author[0]} />
         <meta name="twitter:label2" content="Filed under" />
         {post.frontmatter.tags && <meta name="twitter:data2" content={post.frontmatter.tags[0]} />}
         {config.twitter && (

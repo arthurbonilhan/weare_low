@@ -6,7 +6,7 @@ import { Footer } from '../components/Footer';
 import SiteNav from '../components/header/SiteNav';
 import { PostCard } from '../components/PostCard';
 import { Wrapper } from '../components/Wrapper';
-import IndexLayout from '../layouts';
+import IndexLayout from '../layouts/index'
 import {
   inner,
   outer,
